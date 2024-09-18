@@ -7,5 +7,10 @@
 </head>
 <body>
     <h2>สมาชิก</h2>
+    <ul>
+        {% for x in mymembers %}
+          <li>{{ x.firstname }} {{ x.lastname }}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
